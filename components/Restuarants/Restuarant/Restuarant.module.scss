@@ -1,0 +1,89 @@
+.restuarant__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 5px 0px rgb(155, 155, 155);
+    border-radius: 5px;
+    width: 100%;
+    height: 25vh;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 5px 0px rgb(231, 25, 25);
+    }
+
+    .restuarant__card__image {
+        height: 100%;
+        img {
+            border-radius: 5px 0 0 5px;
+            height: 100%;
+        }
+    }
+
+    .restuarant__card__info {
+        width: 100%;
+        padding: 0 10px 0 20px;
+        .restuarant__name {
+            margin-top: 0px;
+            font-weight: bolder;
+            font-size: 1.6rem;
+        }
+
+        .restuarant__location {
+            margin-top: -18px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: rgb(120, 120, 120);
+        }
+
+        .restuarant__type {
+            margin-top: -5px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .restuarant__ratings__avgerage_cost {
+            display: flex;
+            justify-content: space-between;
+            margin-top: -20px;
+
+            .restuarant__rating {
+                .ratings {
+                    font-weight: bolder;
+                }
+                .votes {
+                    color: rgb(120, 120, 120);
+                }
+            }
+
+            .restuarant__average_cost{
+                color: rgb(120, 120, 120)
+            }
+        }
+
+    }
+}
+
+@media only screen and(max-width: 590px){
+    .restuarant__card{
+        flex-direction: column;
+        text-align: center;
+        height: 55vh;
+        padding-top: 15px;
+        .restuarant__card__info{
+            .restuarant__name{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    
+}
+
+@media only screen and(max-width: 590px){
+    .restuarant__card{
+        height: 60vh;
+    }
+    
+}

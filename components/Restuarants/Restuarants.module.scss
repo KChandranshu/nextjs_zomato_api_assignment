@@ -1,0 +1,28 @@
+.restaurants__section{
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media only screen and(max-width: 980px){
+    .restaurants__section{
+        width: 70%;
+    }
+}
+
+@media only screen and(max-width: 830px){
+    .restaurants__section{
+        width: 80%;
+    }
+}
+
+@media only screen and(max-width: 730px){
+    .restaurants__section{
+        width: 90%;
+    }
+}
+
+@media only screen and(max-width: 650px){
+    .restaurants__section{
+        width: 100%;
+    }
+}
