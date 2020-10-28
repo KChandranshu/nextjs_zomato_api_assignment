@@ -1,6 +1,7 @@
 $base-red: #CB202D;
 $base-grey: rgb(155, 155, 155);
 $base-white: #fff;
+$base-black: #000;
 
 .restuarant__card {
     display: flex;
@@ -11,8 +12,9 @@ $base-white: #fff;
     height: 25vh;
     margin: 0 auto;
     margin-bottom: 40px;
-    background-color: $base-red;
     font-weight: bolder;
+    background-color: $base-red;
+    color: $base-white;
 
     &:hover {
         cursor: pointer;
@@ -26,7 +28,6 @@ $base-white: #fff;
             border-radius: 5px 0 0 5px;
             height: 100%;
             width: 100%;
-            color: $base-white;
         }
     }
 
@@ -37,14 +38,11 @@ $base-white: #fff;
         .restuarant__name {
             margin-top: 0px;
             font-size: 1.7rem;
-            color: #fff;
         }
 
         .restuarant__location {
             margin-top: -18px;
-            font-weight: 500;
             font-size: 0.9rem;
-            color: $base-white;
         }
 
         .restuarant__type {
@@ -57,17 +55,7 @@ $base-white: #fff;
             justify-content: space-between;
             align-items: center;
             margin-top: -15px;
-            .restuarant__rating {
-                .votes {
-                    color: $base-white;
-                }
-            }
-
-            .restuarant__average_cost{
-                color: $base-white
-            }
         }
-
     }
 }
 

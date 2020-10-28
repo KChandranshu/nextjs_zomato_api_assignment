@@ -27,6 +27,7 @@ export default function Restuarant({
                         <StarRatings
                             rating={Number(avgRating)}
                             starRatedColor="#000"
+                            starEmptyColor="#fff"
                             starDimension="1rem"
                             starSpacing="0.1rem"
                         />
