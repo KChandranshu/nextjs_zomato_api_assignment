@@ -15,7 +15,8 @@ export default function Restuarants({restaurants}){
                     cuisines={restaurant.cuisines}
                     avgRating={restaurant.user_rating.aggregate_rating}
                     totalVotes={restaurant.user_rating.votes}
-                    costForTwo={restaurant.average_cost_for_two} />
+                    costForTwo={restaurant.average_cost_for_two}
+                    url={restaurant.url} />
             })}
         </section>
     )

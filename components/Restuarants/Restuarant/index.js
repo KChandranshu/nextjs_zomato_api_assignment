@@ -10,10 +10,12 @@ export default function Restuarant({
     cuisines,
     avgRating,
     totalVotes,
-    costForTwo
+    costForTwo,
+    url
 }) {
     return (
-        <section className={styles.restuarant__card}>
+        <a href={url} target="_blank">
+            <section className={styles.restuarant__card}>
             <div className={styles.restuarant__card__image}>
                 <img src={thumbnail} alt="Restuarant Image" />
             </div>
@@ -48,5 +50,6 @@ export default function Restuarant({
                 </div>
             </div>
         </section>
+        </a>
     )
 }
