@@ -16,15 +16,18 @@
 
     .restuarant__card__image {
         height: 100%;
+        width: 27%;
         img {
             border-radius: 5px 0 0 5px;
             height: 100%;
+            width: 100%;
         }
     }
 
     .restuarant__card__info {
         width: 100%;
         padding: 0 10px 0 20px;
+
         .restuarant__name {
             margin-top: 0px;
             font-weight: bolder;
@@ -47,8 +50,8 @@
         .restuarant__ratings__avgerage_cost {
             display: flex;
             justify-content: space-between;
-            margin-top: -20px;
-
+            align-items: center;
+            margin-top: -15px;
             .restuarant__rating {
                 .ratings {
                     font-weight: bolder;
@@ -70,20 +73,24 @@
     .restuarant__card{
         flex-direction: column;
         text-align: center;
-        height: 55vh;
+        height: 60vh;
         padding-top: 15px;
+        box-shadow: none;
+        &:hover{
+            box-shadow: none;
+        }
+        .restuarant__card__image{
+            width: 60%;
+            img{
+                width: 70%;
+                border-radius: 5px;
+            }
+        }
         .restuarant__card__info{
             .restuarant__name{
                 font-size: 1.2rem;
             }
         }
-    }
-    
-}
-
-@media only screen and(max-width: 590px){
-    .restuarant__card{
-        height: 60vh;
     }
     
 }

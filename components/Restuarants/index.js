@@ -6,7 +6,6 @@ export default function Restuarants({restaurants}){
     return (
         <section className={styles.restaurants__section}>
             {restaurants.map(restaurant => {
-                console.log(restaurant)
                 return <Restuarant 
                     key={restaurant.id}
                     name={restaurant.name} 

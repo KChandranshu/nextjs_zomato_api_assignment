@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
+import styles from './Layout.module.scss'
 
 export default function Layout(props) {
     return (
@@ -9,16 +10,14 @@ export default function Layout(props) {
                 <title>Zomato API Assignment</title>
             </Head>
             <main>
-                <div>
-                    <ul>
+                <div className={styles.pagination}>
+                    <div className={styles.pagination__links}>
                         {Array.apply(null, Array(10)).map((page, i) => (
-                            <li key={i}>
-                                <Link href={`/restuarant/${i + 1}`}>
-                                    <a>{i + 1}</a>
-                                </Link>
-                            </li>
+                            <Link href={`/restuarant/${i + 1}`} key={i}>
+                                <a>{i + 1}</a>
+                            </Link>
                         ))}
-                    </ul>
+                    </div>
                 </div>
                 {props.children}
             </main>
