@@ -1,19 +1,18 @@
-$base-red: #CB202D;
-$white: #fff;
+$base-red: #cb202d;
+$base-white: #fff;
 
 .layout {
-    background-color: #fff;
-    // background-color: #fff0f0;
+    background-color: $base-white;
     .pagination__links {
         position: absolute;
         left: 20%;
         width: 60%;
         height: 6vh;
-        background-color: #fffff5;
+        background-color: $base-white;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+
         a {
             color: black;
             font-weight: bolder;
@@ -39,9 +38,9 @@ $white: #fff;
         .pagination__links {
             bottom: 0px;
             border-radius: 6px 6px 0 0;
-            border-left: 2px solid $white;
-            border-top: 2px solid $white;
-            border-right: 2px solid $white;
+            border-left: 2px solid $base-white;
+            border-top: 2px solid $base-white;
+            border-right: 2px solid $base-white;
             a {
                 &:first-child {
                     &.active {
@@ -64,9 +63,9 @@ $white: #fff;
         .pagination__links {
             top: 0px;
             border-radius: 0 0 6px 6px;
-            border-right: 2px solid $white;
-            border-bottom: 2px solid $white;
-            border-left: 2px solid $white;
+            border-right: 2px solid $base-white;
+            border-bottom: 2px solid $base-white;
+            border-left: 2px solid $base-white;
             a {
                 &:first-child {
                     &.active {
@@ -82,12 +81,51 @@ $white: #fff;
         }
     }
 }
-@media only screen and(max-width: 590px) {
-    .head,
-    .foot {
-        .pagination__links {
-            left: 0%;
-            width: 100%;
+
+@media only screen and(max-width: 980px) {
+    .layout {
+        .head,
+        .foot {
+            .pagination__links {
+                left: 15%;
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 830px) {
+    .layout {
+        .head,
+        .foot {
+            .pagination__links {
+                left: 10%;
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 730px) {
+    .layout {
+        .head,
+        .foot {
+            .pagination__links {
+                left: 5%;
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 650px) {
+    .layout {
+        .head,
+        .foot {
+            .pagination__links {
+                left: 0%;
+                width: 100%;
+            }
         }
     }
 }
