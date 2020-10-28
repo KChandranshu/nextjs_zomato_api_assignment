@@ -9,5 +9,5 @@ export default function Home() {
     router.push('/restuarant/1')
   }, [])
 
-  return <></>
+  return <div style={{height:'100vh'}}></div>
 }

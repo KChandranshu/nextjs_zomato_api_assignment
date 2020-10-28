@@ -26,7 +26,7 @@ export default function Restuarant({
                     <div className={styles.restuarant__rating}>
                         <StarRatings
                             rating={Number(avgRating)}
-                            starRatedColor="rgb(224,31,38)"
+                            starRatedColor="#000"
                             starDimension="1rem"
                             starSpacing="0.1rem"
                         />

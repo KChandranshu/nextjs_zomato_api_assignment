@@ -1,5 +1,9 @@
+$base-red: #CB202D;
+$white: #fff;
+
 .layout {
-    background-color: #fff0f0;
+    background-color: #fff;
+    // background-color: #fff0f0;
     .pagination__links {
         position: absolute;
         left: 20%;
@@ -9,7 +13,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        
         a {
             color: black;
             font-weight: bolder;
@@ -18,37 +22,69 @@
             width: 10%;
             padding-top: 7px;
             text-align: center;
-            border: 1px solid rgb(231, 25, 25);
+        }
+
+        .active {
+            background-color: $base-red;
+            color: white;
         }
     }
 
     .head {
-        height: 30vh;
-        margin-bottom: 30px;
-        background-color: rgb(231, 25, 25);
+        height: 35vh;
+        margin-bottom: 40px;
+        background-color: $base-red;
         position: relative;
 
-        .pagination__links{
+        .pagination__links {
             bottom: 0px;
             border-radius: 6px 6px 0 0;
-            border-bottom: 1px solid rgb(231, 25, 25);
+            border-left: 2px solid $white;
+            border-top: 2px solid $white;
+            border-right: 2px solid $white;
+            a {
+                &:first-child {
+                    &.active {
+                        border-radius: 6px 0 0 0;
+                    }
+                }
+                &:last-child {
+                    &.active {
+                        border-radius: 0 6px 0 0;
+                    }
+                }
+            }
         }
     }
     .foot {
-        height: 30vh;
-        margin-top: 30px;
-        background-color: rgb(231, 25, 25);
+        height: 35vh;
+        background-color: $base-red;
         position: relative;
-
-        .pagination__links{
+        margin-top: 60px;
+        .pagination__links {
             top: 0px;
             border-radius: 0 0 6px 6px;
-            border-top: 1px solid rgb(231, 25, 25);
+            border-right: 2px solid $white;
+            border-bottom: 2px solid $white;
+            border-left: 2px solid $white;
+            a {
+                &:first-child {
+                    &.active {
+                        border-radius: 0 0 0 6px;
+                    }
+                }
+                &:last-child {
+                    &.active {
+                        border-radius: 0 0 6px 0;
+                    }
+                }
+            }
         }
     }
 }
 @media only screen and(max-width: 590px) {
-    .head, .foot {
+    .head,
+    .foot {
         .pagination__links {
             left: 0%;
             width: 100%;
