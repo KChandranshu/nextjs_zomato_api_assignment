@@ -15,7 +15,7 @@ export default function Layout(props) {
                 <div className={styles.head}>
                     <div className={styles.pagination__links}>
                         {Array.apply(null, Array(10)).map((page, i) => (
-                            <Link href={`/restuarant/${i + 1}`} key={i}>
+                            <Link href="/restuarant/[id]" as={`/restuarant/${i + 1}`} key={i}>
                                 <a className={Number(router.query.id) == i+1 ? styles.active : ''}>{i + 1}</a>
                             </Link>
                         ))}
@@ -27,7 +27,7 @@ export default function Layout(props) {
                 <div className={styles.foot}>
                     <div className={styles.pagination__links}>
                         {Array.apply(null, Array(10)).map((page, i) => (
-                            <Link href={`/restuarant/${i + 1}`} key={i}>
+                            <Link href="/restuarant/[id]" as={`/restuarant/${i + 1}`} key={i}>
                                 <a className={Number(router.query.id) == i+1 ? styles.active : ''}>{i + 1}</a>
                             </Link>
                         ))}
